@@ -8,6 +8,7 @@ using System.Web.Http;
 
 namespace Starter.WebAPI.Angular.AzureAD.Controllers
 {	
+	[Authorize]
 	public class ValuesController : ApiController
 	{
 		private static readonly ICollection<ValueModel> _values = new List<ValueModel>()
