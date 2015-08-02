@@ -1,0 +1,9 @@
+﻿<h2>{{message}}</h2>
+<ol>
+    <li ng-repeat="value in values">
+        <input type="text" ng-model="value.Value"/>        
+        <button type="button" ng-hide="value.isNew" ng-click="update(value)">Update</button>
+        <button type="button" ng-show="value.isNew" ng-click="add(value)">Add</button>
+        <button type="button" ng-click="delete(value.Id)">Delete</button>
+    </li>
+</ol>
